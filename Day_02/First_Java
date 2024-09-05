@@ -1,0 +1,41 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.first_java;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author CAMARGO
+ */
+public class First_Java {
+
+    public static void main(String[] args) {
+        String st = "Informe um numero entre 1 e 2:";
+        st = JOptionPane.showInputDialog(null, st);
+
+        int mes = Integer.parseInt(st);
+
+        switch (mes) {
+
+            case 1:
+                st = "Pagamento em dia";
+                break;
+
+            case 2:
+                st = "Pagamento atrasado";
+                break;
+
+            default:
+                st = "Dia invalido";
+                JOptionPane.showMessageDialog(null, st, "ERRO", 0);
+                System.exit(0);
+        }
+        st = "Você escolheu o mês " + st;
+                JOptionPane.showMessageDialog(null, st, "Mensagem", 1);
+                System.exit(0);
+    }
+
+}
